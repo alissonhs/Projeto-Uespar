@@ -124,7 +124,7 @@ object F_modelo: TF_modelo
       OnClick = SPB_cancelarClick
     end
     object SPB_editar: TSpeedButton
-      Left = 176
+      Left = 208
       Top = 8
       Width = 23
       Height = 22
