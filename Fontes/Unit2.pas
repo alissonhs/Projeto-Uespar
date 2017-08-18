@@ -1,14 +1,14 @@
-unit U_Cliente;
+unit Unit2;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, U_modelo, ComCtrls, Buttons, ExtCtrls, jpeg, Grids, DBGrids,
-  StdCtrls;
+  Dialogs, U_modelo, ComCtrls, Buttons, ExtCtrls, jpeg, StdCtrls, Grids,
+  DBGrids;
 
 type
-  TF_Cliente = class(TF_modelo)
+  TF_Venda = class(TF_modelo)
   private
     { Private declarations }
   public
@@ -16,11 +16,9 @@ type
   end;
 
 var
-  F_Cliente: TF_Cliente;
+  F_Venda: TF_Venda;
 
 implementation
-
-uses U_Cidade, U_Prin, U_Principal, U_Produto, Unit1;
 
 {$R *.dfm}
 

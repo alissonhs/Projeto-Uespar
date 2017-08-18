@@ -46,16 +46,13 @@ object F_Menu_Prin: TF_Menu_Prin
       end
       object Produto1: TMenuItem
         Caption = 'Produto'
-        OnClick = Produto1Click
       end
     end
     object Venda1: TMenuItem
       Caption = '&Venda'
-      OnClick = Venda1Click
     end
     object EntradadeProdutor1: TMenuItem
       Caption = '&Entrada de Produtos'
-      OnClick = EntradadeProdutor1Click
     end
     object Estoque1: TMenuItem
       Caption = '&Relat'#243'rio'

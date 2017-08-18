@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ComCtrls, ExtCtrls, Buttons, StdCtrls;
+  Dialogs, ComCtrls, ExtCtrls, Buttons, StdCtrls, jpeg, Grids, DBGrids;
 
 type
   TF_modelo = class(TForm)
@@ -15,7 +15,12 @@ type
     SPB_cancelar: TSpeedButton;
     SPB_editar: TSpeedButton;
     SPB_excluir: TSpeedButton;
-    TabControl1: TTabControl;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    DBGrid1: TDBGrid;
     procedure SPB_novoClick(Sender: TObject);
     procedure SPB_salvarClick(Sender: TObject);
     procedure SPB_cancelarClick(Sender: TObject);

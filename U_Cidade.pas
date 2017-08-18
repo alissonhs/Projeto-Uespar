@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, U_modelo, ComCtrls, Buttons, ExtCtrls;
+  Dialogs, U_modelo, ComCtrls, Buttons, ExtCtrls, jpeg, Grids, DBGrids,
+  StdCtrls;
 
 type
   TF_cidade = class(TF_modelo)

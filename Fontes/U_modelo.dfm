@@ -1,8 +1,8 @@
 object F_modelo: TF_modelo
   Left = 192
   Top = 125
-  Width = 696
-  Height = 480
+  Width = 715
+  Height = 482
   Caption = 'Modelo'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -42,7 +42,7 @@ object F_modelo: TF_modelo
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 680
+    Width = 682
     Height = 41
     Align = alTop
     TabOrder = 0
@@ -124,7 +124,7 @@ object F_modelo: TF_modelo
       OnClick = SPB_cancelarClick
     end
     object SPB_editar: TSpeedButton
-      Left = 208
+      Left = 176
       Top = 8
       Width = 23
       Height = 22
@@ -178,8 +178,8 @@ object F_modelo: TF_modelo
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 422
-    Width = 680
+    Top = 425
+    Width = 682
     Height = 19
     Panels = <
       item
@@ -191,16 +191,47 @@ object F_modelo: TF_modelo
         Width = 50
       end>
   end
-  object TabControl1: TTabControl
-    Left = 0
-    Top = 41
-    Width = 680
-    Height = 381
-    Align = alClient
+  object PageControl1: TPageControl
+    Left = -8
+    Top = 40
+    Width = 689
+    Height = 385
+    ActivePage = TabSheet2
     TabOrder = 2
-    Tabs.Strings = (
-      'Cadastro'
-      'Consulta')
-    TabIndex = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Cadastro'
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Consulta'
+      ImageIndex = 1
+      object GroupBox1: TGroupBox
+        Left = 8
+        Top = 0
+        Width = 673
+        Height = 105
+        Caption = 'Filtros'
+        TabOrder = 0
+      end
+      object GroupBox2: TGroupBox
+        Left = 8
+        Top = 112
+        Width = 673
+        Height = 193
+        Caption = 'Resultado da Consulta'
+        TabOrder = 1
+        object DBGrid1: TDBGrid
+          Left = 0
+          Top = 16
+          Width = 673
+          Height = 169
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'MS Sans Serif'
+          TitleFont.Style = []
+        end
+      end
+    end
   end
 end

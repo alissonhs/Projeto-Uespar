@@ -7,7 +7,10 @@ uses
   U_Cidade in '..\U_Cidade.pas' {F_cidade},
   U_Cliente in '..\U_Cliente.pas' {F_Cliente},
   U_Principal in '..\U_Principal.pas' {F_Principal},
-  U_Prin in '..\U_Prin.pas' {Form2};
+  U_Prin in '..\U_Prin.pas' {F_Menu_Prin},
+  U_Produto in '..\U_Produto.pas' {f_produto},
+  Unit2 in 'Unit2.pas' {F_Venda},
+  U_Projeto in 'U_Projeto.pas' {F_EntP};
 
 {$R *.res}
 
@@ -18,6 +21,9 @@ begin
   Application.CreateForm(TF_cidade, F_cidade);
   Application.CreateForm(TF_Cliente, F_Cliente);
   Application.CreateForm(TF_Principal, F_Principal);
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TF_Menu_Prin, F_Menu_Prin);
+  Application.CreateForm(Tf_produto, f_produto);
+  Application.CreateForm(TF_Venda, F_Venda);
+  Application.CreateForm(TF_EntP, F_EntP);
   Application.Run;
 end.

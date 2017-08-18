@@ -201,6 +201,22 @@ object F_modelo: TF_modelo
     Tabs.Strings = (
       'Cadastro'
       'Consulta')
-    TabIndex = 0
+    TabIndex = 1
+    object GroupBox1: TGroupBox
+      Left = 0
+      Top = 24
+      Width = 681
+      Height = 105
+      Caption = 'Filtro'
+      TabOrder = 0
+    end
+    object GroupBox2: TGroupBox
+      Left = -8
+      Top = 128
+      Width = 689
+      Height = 241
+      Caption = 'Resultado'
+      TabOrder = 1
+    end
   end
 end

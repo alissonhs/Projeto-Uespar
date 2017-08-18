@@ -1,4 +1,4 @@
-unit U_Cliente;
+unit U_Produto;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   StdCtrls;
 
 type
-  TF_Cliente = class(TF_modelo)
+  Tf_produto = class(TF_modelo)
   private
     { Private declarations }
   public
@@ -16,11 +16,9 @@ type
   end;
 
 var
-  F_Cliente: TF_Cliente;
+  f_produto: Tf_produto;
 
 implementation
-
-uses U_Cidade, U_Prin, U_Principal, U_Produto, Unit1;
 
 {$R *.dfm}
 

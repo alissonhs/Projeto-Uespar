@@ -24,9 +24,6 @@ type
     procedure F_PrinciClick(Sender: TObject);
     procedure Cidade1Click(Sender: TObject);
     procedure Cliente1Click(Sender: TObject);
-    procedure Produto1Click(Sender: TObject);
-    procedure Venda1Click(Sender: TObject);
-    procedure EntradadeProdutor1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,21 +53,6 @@ end;
 procedure TF_Menu_Prin.Cliente1Click(Sender: TObject);
 begin
 F_Cliente.ShowModal;
-end;
-
-procedure TF_Menu_Prin.Produto1Click(Sender: TObject);
-begin
-f_produto.ShowModal;
-end;
-
-procedure TF_Menu_Prin.Venda1Click(Sender: TObject);
-begin
-F_Venda.ShowModal;
-end;
-
-procedure TF_Menu_Prin.EntradadeProdutor1Click(Sender: TObject);
-begin
-F_EntP.ShowModal;
 end;
 
 end.
